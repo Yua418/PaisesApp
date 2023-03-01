@@ -1,27 +1,37 @@
-# PaisesApp
+# Paises App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+## Introduccion
+Este es un proyecto del curso "Angular de cero a experto", esta es una aplicacion que consigue informacion sobre paises consumiendo varias API´s.
 
-## Development server
+Estas API´s probienen de  [REST Countries](https://restcountries.com/#api-endpoints-v2-all "Web de API´s de Geografia") 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Modulos
 
-## Code scaffolding
+### Modulo App
+Este es el modulo principal de la apliacion, donde se agrupan todos los modulos, el componente de este modulo es:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **app.component**: Este es el componente principal de la aplicacion, donde se construlle la app con todos los modulos secundarios.
 
-## Build
+### Shared
+Este modulo contiene los componentes globales de la aplicacion:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **sidebar.component**: Esta es la barra lateral de la aplicacion
 
-## Running unit tests
+2. **menu.component**:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. **footer.component**:
 
-## Running end-to-end tests
+### Paises
+Este modulo contiene la funcionalidad principal de nuestra aplicacion, "la busqueda de paises", esta consta de tres carpetas principales que agrupan su tipo predeterminado de archivo.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **pages**:
+  * *c*:
 
-## Further help
+2. **interfaces**:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. **components**:
+
+4. **services**:
+
+### app-routing.module.ts
+Este modulo administra las rutas de nuestra aplicacion. 
