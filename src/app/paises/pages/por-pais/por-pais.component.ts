@@ -9,9 +9,11 @@ import { PaisService } from './../../services/pais.service';
 })
 export class PorPaisComponent {
   termino:string = "";
-  errorHttp:boolean = false;
   paises:Country[] = [];
+  errorHttp:boolean = false;
+
   constructor(private paisService:PaisService) {}
+
   buscar(termino:string) {
     this.errorHttp = false;
     this.termino = termino;
@@ -23,5 +25,10 @@ export class PorPaisComponent {
         this.paises = [];
       });
     this.termino = "";
+  }
+
+  sugerencias(termino:string) {
+    this.errorHttp = false;
+    // implementar sugerencias
   }
 }

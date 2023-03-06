@@ -1,1 +1,58 @@
-<p>ver-pais works!</p>
+<div class="alert alert-info" *ngIf="!pais; else divPais">Espere por favor...</div>
+
+<ng-template #divPais>
+  <div class="row">
+    <div class="col-12">
+      <h1>{{pais.translations.es}}</h1>
+      <h6>{{pais.nativeName}}</h6>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-7">
+        <h3>Información</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <strong>Capital:</strong> {{pais.capital}}
+            </li>
+            <li class="list-group-item">
+              <strong>Población:</strong> {{pais.population | number}} Personas
+            </li>
+            <li class="list-group-item">
+              <strong>Idioma:</strong> {{pais.languages[0].name}} | {{pais.languages[0].nativeName}}
+            </li>
+            <li class="list-group-item">
+              <strong>Moneda:</strong> {{pais.currencies[0].symbol}} | {{pais.currencies[0].name}}
+            </li>
+            <li class="list-group-item">
+              <strong>Región:</strong> {{pais.region}}, {{pais.subregion}}
+            </li>
+            <li class="list-group-item">
+              <strong>Área:</strong> {{pais.area | number}} Km 2
+            </li>
+            <li class="list-group-item">
+              <strong>prefijos telefónicos:</strong> <span *ngFor="let prefijos of pais.callingCodes"> {{prefijos}}, </span>
+            </li>
+            <li class="list-group-item">
+              <strong>Coordenadas:</strong> Latitud: {{pais.latlng[0]}} ,  Longitud: {{pais.latlng[1]}}
+            </li>
+            <li class="list-group-item">
+              <strong>Zona Horaria:</strong> {{pais.timezones}}
+            </li>
+            <li class="list-group-item">
+              <strong>Dominio:</strong> {{pais.topLevelDomain}}
+            </li>
+            <li class="list-group-item">
+              <strong>Otros Nombres:</strong> <span *ngFor="let nombres of pais.altSpellings"> {{nombres}}, </span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-5">
+          <img [src]="pais.flag" alt="Bandera del pais" class="img-thumbnail">
+        </div>
+    </div>
+  </div>
+</ng-template>
+<hr style="border-color: white;" />
+<hr style="border-color: white;" />
+<hr style="border-color: white;" />
+

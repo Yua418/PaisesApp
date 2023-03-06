@@ -2,9 +2,10 @@
   <input
     type="text"
     name="termino"
-    placeholder="Buscar un pais"
     class="form-control"
     autocomplete="off"
     [(ngModel)]="termino"
+    (input)="teclaPrecionada()"
+    [placeholder]="placeholder"
   />
 </form>

@@ -1,9 +1,11 @@
-<h2>Por Pais</h2>
+<h2>Buscar Países</h2>
 <hr>
 <div class="row">
   <div class="col">
     <app-input-box
       (onEnter)="buscar($event)"
+      (onDebounce)="sugerencias($event)"
+      placeholder="Buscar un pais..."
     ></app-input-box>
   </div>
 </div>
@@ -11,7 +13,7 @@
 <div
   *ngIf="errorHttp"
   class="alert alert-danger"
-  >No se encontro nada con ese termino <!--{{termino}}-->
+  >No se encontró nada con ese término <!--{{termino}}-->
 </div>
 <div *ngIf="!errorHttp" class="row">
   <div class="col">

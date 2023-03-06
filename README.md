@@ -4,12 +4,10 @@ Este es un proyecto del curso "Angular de cero a experto", esta es una aplicacio
 
 Estas API´s probienen de  [REST Countries](https://restcountries.com/#api-endpoints-v2-all "Web de API´s de Geografia").
 
-Dado que la API solo funciona en Ingles he hecho uso del modulo [ngx-translate](https://www.digitalocean.com/community/tutorials/angular-ngx-translate "Modulo Traductor") para darle al usuario una mejor experiencia.
-
 
 # Modulos
 ## Modulo App
-***1
+***
 Este es el modulo principal de la apliacion, donde se agrupan todos los modulos, el componente de este modulo es:
 
 1. **app.component**: Este es el componente principal de la aplicacion, donde se construlle la app con todos los modulos secundarios.
