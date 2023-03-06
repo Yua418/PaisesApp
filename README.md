@@ -1,11 +1,15 @@
-# Paises App
+# Paises App {<font color="red">In Progress</font>}
 ## Introduccion
 Este es un proyecto del curso "Angular de cero a experto", esta es una aplicacion que consigue informacion sobre paises consumiendo varias API´s.
 
-Estas API´s probienen de  [REST Countries](https://restcountries.com/#api-endpoints-v2-all "Web de API´s de Geografia") 
+Estas API´s probienen de  [REST Countries](https://restcountries.com/#api-endpoints-v2-all "Web de API´s de Geografia").
+
+Dado que la API solo funciona en Ingles he hecho uso del modulo [ngx-translate](https://www.digitalocean.com/community/tutorials/angular-ngx-translate "Modulo Traductor") para darle al usuario una mejor experiencia.
+
+
 # Modulos
 ## Modulo App
-***
+***1
 Este es el modulo principal de la apliacion, donde se agrupan todos los modulos, el componente de este modulo es:
 
 1. **app.component**: Este es el componente principal de la aplicacion, donde se construlle la app con todos los modulos secundarios.
@@ -28,14 +32,15 @@ Este modulo contiene los componentes globales de la aplicacion:
 ***
 Este modulo contiene la funcionalidad principal de nuestra aplicacion, "la busqueda de paises", esta consta de tres carpetas principales que agrupan su tipo predeterminado de archivo.
 
-1. **pages**:
-    * *c*:
+1. **pages**: En esta carpeta se encuentran todos los componentes que componen las vistas de nuestra pagina en sus distintas rutas.
+    * *por-pais.component.ts*: Aqui se introducen las busquedas por pais
 
-2. **interfaces**:
+2. **interfaces**: Aqui se encuentran las interfaces que facilitan el desarrollo del proyecto, como;
+    * *Country*: esta interface contiene el tipado que debe tener el objeto llamado por la API `RESt Countries`.
 
-3. **components**:
+3. **components**: Aqui se encuentran los componentes que funcionan dentro de las paginas que estan en la carpeta *Page*.
 
-4. **services**:
+4. **services**: Aqui se encuentran las funcionalidades principales de la aplicacion
 
 ## app-routing.module.ts
 ***

@@ -1,1 +1,22 @@
-<p>por-pais works!</p>
+<h2>Por Pais</h2>
+<hr>
+<div class="row">
+  <div class="col">
+    <app-input-box
+      (onEnter)="buscar($event)"
+    ></app-input-box>
+  </div>
+</div>
+<hr>
+<div
+  *ngIf="errorHttp"
+  class="alert alert-danger"
+  >No se encontro nada con ese termino <!--{{termino}}-->
+</div>
+<div *ngIf="!errorHttp" class="row">
+  <div class="col">
+    <app-body-table
+      [paises]="paises"
+    ></app-body-table>
+  </div>
+</div>
