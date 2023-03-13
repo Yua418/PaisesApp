@@ -8,6 +8,9 @@ import { Country } from './../interfaces/pais.interface';
   providedIn: 'root'
 })
 export class PaisService {
+
+  regiones:string[] = [];
+
   private apiUrl:string = "https://restcountries.com/v2/";
   constructor(private http:HttpClient) { }
   buscarPais(termino:string):Observable<Country[]> {

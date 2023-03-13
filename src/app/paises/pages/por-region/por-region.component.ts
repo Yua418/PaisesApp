@@ -11,6 +11,7 @@ export class PorRegionComponent {
   termino:string = "";
   paises:Country[] = [];
   errorHttp:boolean = false;
+  regiones:string[] = ["africa", "americas", "asia", "europe", "oceania"];
 
   constructor(private paisService:PaisService) {}
 

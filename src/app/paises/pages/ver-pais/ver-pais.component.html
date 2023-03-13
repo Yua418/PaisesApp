@@ -30,19 +30,19 @@
               <strong>Área:</strong> {{pais.area | number}} Km 2
             </li>
             <li class="list-group-item">
-              <strong>prefijos telefónicos:</strong> <span *ngFor="let prefijos of pais.callingCodes"> {{prefijos}}, </span>
+              <strong>Prefijos Telefónicos:</strong> <span *ngFor="let prefijos of pais.callingCodes"> --{{prefijos}} </span>
             </li>
             <li class="list-group-item">
               <strong>Coordenadas:</strong> Latitud: {{pais.latlng[0]}} ,  Longitud: {{pais.latlng[1]}}
             </li>
             <li class="list-group-item">
-              <strong>Zona Horaria:</strong> {{pais.timezones}}
+              <strong>Zona Horaria:</strong> <span *ngFor="let timezone of pais.timezones"> --{{timezone}} </span>
             </li>
             <li class="list-group-item">
               <strong>Dominio:</strong> {{pais.topLevelDomain}}
             </li>
             <li class="list-group-item">
-              <strong>Otros Nombres:</strong> <span *ngFor="let nombres of pais.altSpellings"> {{nombres}}, </span>
+              <strong>Otros Nombres:</strong> <span *ngFor="let nombres of pais.altSpellings"> --{{nombres}} </span>
             </li>
           </ul>
         </div>
