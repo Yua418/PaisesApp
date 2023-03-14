@@ -2,8 +2,6 @@
 ## Introduccion
 Este es un proyecto del curso "Angular de cero a experto", esta es una aplicacion que consigue informacion sobre paises consumiendo varias API´s.
 
-Estas API´s probienen de  [REST Countries](https://restcountries.com/#api-endpoints-v2-all "Web de API´s de Geografia").
-
 
 # Modulos
 ## Modulo App
@@ -20,9 +18,9 @@ Este modulo contiene los componentes globales de la aplicacion:
 
 1. **sidebar.component**: Esta es la barra lateral de la aplicacion
 
-2. **menu.component**:
+2. **menu.component**: Este era un menu, pero fue descartado.
 
-3. **footer.component**:
+3. **footer.component**: Este es el pie de pagina de la app.
 
 
 

@@ -1,15 +1,17 @@
-<h2>Buscar Países</h2>
+<h2>Buscar: <small>{{regionActiva}}</small> </h2>
 <hr>
+<h5>Selecciona una región:</h5>
 <div class="row">
   <div class="col">
-    <app-input-box
-      (onEnter)="buscar($event)"
-      (onDebounce)="sugerencias($event)"
-      placeholder="Buscar una Región... "
-    ></app-input-box>
+    <button
+      *ngFor="let region of regiones"
+      [class]="getClassCss(region[1])"
+      (click)="activarRegion(region[1])"
+      (click)="buscar(region[0])"
+        >{{region[0] | uppercase}}
+    </button>
   </div>
 </div>
-<hr>
 <div
   *ngIf="errorHttp"
   class="alert alert-danger"
@@ -22,4 +24,5 @@
     ></app-body-table>
   </div>
 </div>
+
 

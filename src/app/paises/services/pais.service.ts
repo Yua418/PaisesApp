@@ -23,8 +23,8 @@ export class PaisService {
     return this.http.get<Country[]>(url);
   }
 
-  buscarRegion(termino:string):Observable<Country[]> {
-    const url:string = `${this.apiUrl}/region/${ termino }`;
+  buscarRegion(region:string):Observable<Country[]> {
+    const url:string = `${this.apiUrl}/regionalbloc/${ region }`;
     return this.http.get<Country[]>(url);
   }
 
