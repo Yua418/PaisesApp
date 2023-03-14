@@ -1,4 +1,4 @@
-# Paises App {<font color="red">In Progress</font>}
+# Paises App 
 ## Introduccion
 Este es un proyecto del curso "Angular de cero a experto", esta es una aplicacion que consigue informacion sobre paises consumiendo varias API´s.
 
