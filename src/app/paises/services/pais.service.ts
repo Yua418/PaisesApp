@@ -10,6 +10,7 @@ import { Country } from './../interfaces/pais.interface';
 export class PaisService {
 
   regiones:string[] = [];
+  field:string = "name,capital,alpha2code,population,region,flag,translation";
 
   private apiUrl:string = "https://restcountries.com/v2/";
   constructor(private http:HttpClient) { }
